@@ -22,7 +22,7 @@ int main() {
     std::vector<int> vsearch;
 
     // Grabar Datos del archivo "Locations.csv" en ll
-    std::ifstream file("../Locations.csv");
+    std::ifstream file("../"+LOCATION_FILE);
     std::string line;
     if(!file) {
         std::cout << "Cannot open Locations.csv file.\n";
@@ -69,12 +69,11 @@ int main() {
             i++;
         }
         i = 0;
-        //std::cout << "Line: " << _position_id << " " << _state_code << " " << _county << " " << _latitude << " " << _longitude << " " << _line << " " << _construction << std::endl;
+        std::cout << "Line: " << _position_id << " " << _state_code << " " << _county << " " << _latitude << " " << _longitude << " " << _line << " " << _construction << std::endl;
         Location temp_data = Location(_position_id, _state_code, _county, _latitude, _longitude, _line, _construction);
-
+        ll.add_tail(temp_data);
     }
     // Fin Grabar datos del archivo Locations.csv en ll
-    // ll.add_detail(DATA);
 
 
     // Grabar Datos del archivo "Locations.csv" en bst

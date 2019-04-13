@@ -4,9 +4,8 @@
 
 #include "LinkedList.h"
 
-UTEC::LinkedList::LinkedList() {
-
-}
+//UTEC::LinkedList::LinkedList() {
+//}
 
 UTEC::LinkedList::~LinkedList() {
 
@@ -44,6 +43,7 @@ void UTEC::LinkedList::add_head(const Location& data) {
         head = temp;
     }
 }
+
 
 void UTEC::LinkedList::add_tail(const Location& data) {
     Node* temp = new Node(data);

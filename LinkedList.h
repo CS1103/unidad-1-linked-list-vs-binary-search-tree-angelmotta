@@ -11,13 +11,15 @@ namespace UTEC {
     struct Node {
         Location data;
         Node* next;
+
+        Node(Location data): data{data}, next{nullptr} {}
     };
 
     class LinkedList {
         Node* head;
         Node* tail;
     public:
-        LinkedList();
+        LinkedList(): head{nullptr}, tail{nullptr} {}
         ~LinkedList();
         int size();
         bool is_empty();

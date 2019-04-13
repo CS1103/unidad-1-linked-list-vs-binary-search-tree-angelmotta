@@ -25,9 +25,9 @@ public:
             std::string construction);
 
     // Declare los metodos que crea necesario
+    // Metodo Cargar datos
 
     // Cree que sea necesario agregar destructor, justifique
-
 };
 
 

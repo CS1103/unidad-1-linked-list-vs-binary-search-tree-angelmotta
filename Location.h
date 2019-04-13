@@ -24,6 +24,10 @@ public:
             std::string line,
             std::string construction);
 
+    int getPosition_id() const;
+
+    void setPosition_id(int position_id);
+
     // Declare los metodos que crea necesario
     // Metodo Cargar datos
 

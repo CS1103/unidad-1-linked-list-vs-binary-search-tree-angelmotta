@@ -15,3 +15,11 @@ Location::Location(int _position_id,std::string _state_code,std::string _county,
     line = _line;
     construction = _construction;
 }
+
+int Location::getPosition_id() const {
+    return position_id;
+}
+
+void Location::setPosition_id(int position_id) {
+    Location::position_id = position_id;
+}

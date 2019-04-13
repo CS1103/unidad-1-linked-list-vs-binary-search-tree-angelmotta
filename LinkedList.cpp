@@ -118,8 +118,19 @@ void UTEC::load_vsearch(std::vector<int> &vsearch, std::string search_file){
 
 UTEC::Node *UTEC::LinkedList::search(int position_id) {
     Node* actual = head;
+    int found = 0;
     while(actual != nullptr){
         Location data_tmp = actual->data;
+        if(data_tmp.getPosition_id() == position_id){
+            found = 1;
+            break;
+        }
         actual = actual->next;
+    }
+    if(found == 1){
+        std::cout << "Elemento encontrado" << std::endl;
+    }
+    else{
+        std::cout << "Elemento no encontrado" << std::endl;
     }
 }

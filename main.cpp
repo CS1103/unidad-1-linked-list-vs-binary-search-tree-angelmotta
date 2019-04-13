@@ -36,8 +36,10 @@ int main() {
     // Calcular los tiempos promedios en cada caso
     for (const auto& id: vsearch) {
         // Buscar en ll
-        //std::cout << id << std::endl;
+        std::cout  << "Buscando id: " << id << std::endl;
+        //
         ll.search(id);
+        //
         // Buscar en bsd
     }
 

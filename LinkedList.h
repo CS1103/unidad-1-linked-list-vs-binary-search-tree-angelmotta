@@ -29,9 +29,10 @@ namespace UTEC {
         void add_tail(const Location& data);
         void print();
         void insert(Node* position, const Location& data);
-        Node* search(std::string position_id);
+        Node* search(int position_id);
     };
     void load_locations(LinkedList* linked_list, std::string file_name);
+    void load_vsearch(std::vector<int> &vsearch, std::string search_file);
 }
 
 #endif //LINKEDLISTVSBINARYTREE_LINKEDLIST_H

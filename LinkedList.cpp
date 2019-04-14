@@ -127,10 +127,11 @@ UTEC::Node *UTEC::LinkedList::search(int position_id) {
         }
         actual = actual->next;
     }
-    if(found == 1){
+    return actual;
+    /*if(found == 1){
         std::cout << "Elemento encontrado" << std::endl;
     }
     else{
         std::cout << "Elemento no encontrado" << std::endl;
-    }
+    }*/
 }

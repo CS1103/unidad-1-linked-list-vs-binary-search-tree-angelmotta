@@ -5,7 +5,7 @@
 #include <fstream>
 #include <string>
 #include "LinkedList.h"
-//#include "BinarySearchTree.h"
+#include "BinarySearchTree.h"
 #include "Location.h"
 #include <chrono>
 
@@ -19,13 +19,15 @@ int main() {
 
     // Declarando variables
     LinkedList ll;
-    //BinarySearchTree bst;
+    BinarySearchTree bst;
     std::vector<int> vsearch;
 
     // Grabar Datos del archivo "Locations.csv" en ll
     load_locations(&ll, LOCATION_FILE);
 
     // Grabar Datos del archivo "Locations.csv" en bst
+    //Node_bt* root = insert(bst.get_root(),Location Data);
+    //bst.insert(root, Location data );
 
     // Leer los datos del archivo "Search.txt" y grabarlos en vsearch
     load_vsearch(vsearch, SEARCH_FILE);

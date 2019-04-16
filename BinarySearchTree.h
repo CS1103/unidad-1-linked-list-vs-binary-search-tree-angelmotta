@@ -8,27 +8,29 @@
 
 namespace UTEC {
 
-    struct Node {
+    struct Node_bt {
         Location data;
-        Node* right;
-        Node* left;
+        Node_bt* right;
+        Node_bt* left;
+
+        Node_bt(Location data): data{data}, right{nullptr}, left{nullptr} {}
     };
 
     class BinarySearchTree {
-        Node* root;
+        Node_bt* root;
     public:
-        BinarySearchTree();
+        BinarySearchTree(): root{nullptr} {}
         ~BinarySearchTree();
-        void insert(Location data);
+        Node_bt* insert(Node_bt* node_tmp, const Location& data);
         void clear();
         bool is_empty();
-        Node* get_root();
-        Node* search(std::string position_id);
+        Node_bt* get_root();
+        Node_bt* search(std::string position_id);
         void print();
     };
 
     void load_locations(BinarySearchTree* linked_list, std::string file_name);
-    void print_node(Node* node);
+    void print_node(Node_bt* node);
 }
 
 #endif //LINKEDLISTVSBINARYTREE_BINARYTREE_H

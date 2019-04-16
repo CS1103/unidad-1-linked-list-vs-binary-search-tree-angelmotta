@@ -29,7 +29,7 @@ namespace UTEC {
         void print();
     };
 
-    void load_locations(BinarySearchTree* linked_list, std::string file_name);
+    void load_locations_bts(BinarySearchTree* Binary_tree, std::string file_name);
     void print_node(Node_bt* node);
 }
 

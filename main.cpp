@@ -26,8 +26,7 @@ int main() {
     load_locations(&ll, LOCATION_FILE);
 
     // Grabar Datos del archivo "Locations.csv" en bst
-    //Node_bt* root = insert(bst.get_root(),Location Data);
-    //bst.insert(root, Location data );
+    load_locations_bts(&bst, LOCATION_FILE);
 
     // Leer los datos del archivo "Search.txt" y grabarlos en vsearch
     load_vsearch(vsearch, SEARCH_FILE);
